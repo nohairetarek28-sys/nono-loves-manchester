@@ -1,0 +1,28 @@
+/* إزالة الحواف وجعل الخلفية تملأ الشاشة بالكامل */
+body { 
+    margin: 0; 
+    overflow: hidden; 
+    font-family: 'Segoe UI', Tahoma, sans-serif; 
+    background-color: #000; 
+}
+
+/* تنسيق حاوية النصوص */
+#ui-container {
+    position: absolute; 
+    top: 20px; 
+    width: 100%; 
+    text-align: center;
+    color: white; 
+    z-index: 10; 
+    /* مهم جداً: يمنع النص من إعاقة حركة الماوس في الـ 3D */
+    pointer-events: none;
+}
+
+/* تنسيق عنوان المتحف */
+h1 { 
+    margin: 0; 
+    color: #da291c; /* أحمر مانشستر */
+    text-shadow: 2px 2px 4px #000, -1px -1px 0px #fff; 
+    font-size: 3.5rem; 
+    text-transform: uppercase;
+}
